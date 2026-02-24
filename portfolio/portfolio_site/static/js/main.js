@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             requestAnimationFrame(animateCursor);
         }
         animateCursor();
-
+// .................................................................................
         // Hover effect on interactive elements
         const hoverTargets = document.querySelectorAll('a, button, .project-card, .skill-card, .stat-card, .cta-button, .hero-card');
         hoverTargets.forEach(el => {
@@ -160,42 +160,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+// ---------- Typed Text Animation ----------
+const typedEl = document.querySelector('.typed-text');
+if (typedEl) {
+    const roles = ['Data Analyst','Power BI & SQL Specialist','Python Data Explorer','Turning Data into Insights' ];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
 
-    // ---------- Typed Text Animation ----------
-    const typedEl = document.querySelector('.typed-text');
-    if (typedEl) {
-        const roles = ['Full Stack Developer', 'UI/UX Designer', 'Problem Solver', 'Tech Enthusiast'];
-        let roleIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingSpeed = 100;
+    function typeText() {
+        const currentRole = roles[roleIndex];
 
-        function typeText() {
-            const currentRole = roles[roleIndex];
-
-            if (isDeleting) {
-                typedEl.textContent = currentRole.substring(0, charIndex - 1);
-                charIndex--;
-                typingSpeed = 50;
-            } else {
-                typedEl.textContent = currentRole.substring(0, charIndex + 1);
-                charIndex++;
-                typingSpeed = 100;
-            }
-
-            if (!isDeleting && charIndex === currentRole.length) {
-                isDeleting = true;
-                typingSpeed = 2000; // Pause at end
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                roleIndex = (roleIndex + 1) % roles.length;
-                typingSpeed = 500; // Pause before next word
-            }
-
-            setTimeout(typeText, typingSpeed);
+        if (isDeleting) {
+            typedEl.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+            typingSpeed = 50;
+        } else {
+            typedEl.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+            typingSpeed = 100;
         }
-        typeText();
+
+        if (!isDeleting && charIndex === currentRole.length) {
+            isDeleting = true;
+            typingSpeed = 1500;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typingSpeed = 400;
+        }
+
+        setTimeout(typeText, typingSpeed);
     }
+
+    typeText();
+}
 
     // ---------- 3D Card Tilt (Mouse Tracking) ----------
     const tiltCards = document.querySelectorAll('.hero-card, .project-card-inner');
