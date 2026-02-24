@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // ---------- Typed Text Animation ----------
 const typedEl = document.querySelector('.typed-text');
 if (typedEl) {
-    const roles = ['Data Analyst','Power BI & SQL Specialist','Python Data Explorer','Turning Data into Insights' ];
+    const roles = ['Data Analytics','Power BI & SQL Specialist','Python Data Explorer','Turning Data into Insights' ];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
