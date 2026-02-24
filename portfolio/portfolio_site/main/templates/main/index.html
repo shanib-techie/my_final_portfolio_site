@@ -1,0 +1,98 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Home — Shanib Khan{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    Available for freelance work
+                </div>
+                <h1>Hi, I'm <span class="gradient-text">Shanib Khan</span><br>
+                <span class="typed-wrapper"><span class="typed-text">Full Stack Developer</span></span></h1>
+                <p>I craft stunning digital experiences with modern technologies. Specialized in building responsive, scalable web applications with Django, React, and cutting-edge design systems.</p>
+                <div class="hero-buttons">
+                    <a href="{% url 'main:projects' %}" class="cta-button">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="{% url 'main:contact' %}" class="cta-button-outline">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-3d-wrapper">
+                <div class="hero-card">
+                    <div class="hero-card-content">
+                        <div class="hero-card-avatar">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>Shanib Khan</h3>
+                        <p class="role">Full Stack Developer</p>
+                        <p>Passionate about creating intuitive user experiences and scalable applications. Expert in Python, Django, React, and modern web technologies.</p>
+                        <div class="hero-card-techs">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title reveal">About <span>Me</span></h2>
+        <p class="section-subtitle reveal">A glimpse into my journey and what drives me</p>
+        <div class="about-content">
+            <div class="about-text reveal-left">
+                <p>Hello! I'm Shanib Khan, a passionate full stack developer with over 5 years of experience in building web applications. I specialize in creating responsive, user-friendly websites and applications using modern technologies.</p>
+                <p>My journey began with a curiosity for how things work online, which led me to explore programming and web development. Over the years, I've worked on various projects ranging from small business websites to complex enterprise applications.</p>
+                <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community.</p>
+            </div>
+            <div class="reveal-right">
+                <div class="stats stagger-children">
+                    <div class="stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-card-front">
+                                <div class="stat-number" data-target="5" data-suffix="+">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-card-back">
+                                <p>Building production-grade web apps since 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-card-front">
+                                <div class="stat-number" data-target="50" data-suffix="+">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-card-back">
+                                <p>From MVPs to enterprise solutions across industries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-card-front">
+                                <div class="stat-number" data-target="30" data-suffix="+">0</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                            <div class="stat-card-back">
+                                <p>Trusted by startups and businesses worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

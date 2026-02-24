@@ -1,0 +1,84 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Skills — Shanib Khan{% endblock %}
+{% block content %}
+<section class="hero" style="min-height: 40vh; padding-bottom: 0;">
+    <div class="container">
+        <h1 class="section-title reveal">My <span>Skills</span></h1>
+        <p class="section-subtitle reveal">Technologies and tools that power my development workflow</p>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <div class="container">
+        <div class="skill-grid stagger-children reveal">
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-icon frontend"><i class="fas fa-code"></i></div>
+                    <h3>Frontend Development</h3>
+                </div>
+                <div class="skill-item">
+                    <h4><span>HTML5</span><span>95%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress frontend-bar" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>CSS3</span><span>90%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress frontend-bar" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>JavaScript</span><span>85%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress frontend-bar" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>React</span><span>80%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress frontend-bar" style="width: 80%"></div></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-icon backend"><i class="fas fa-server"></i></div>
+                    <h3>Backend Development</h3>
+                </div>
+                <div class="skill-item">
+                    <h4><span>Python</span><span>95%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress backend-bar" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>Django</span><span>90%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress backend-bar" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>Node.js</span><span>85%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress backend-bar" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>PostgreSQL</span><span>80%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress backend-bar" style="width: 80%"></div></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-icon tools"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & DevOps</h3>
+                </div>
+                <div class="skill-item">
+                    <h4><span>Docker</span><span>85%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress tools-bar" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>Git</span><span>90%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress tools-bar" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>AWS</span><span>75%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress tools-bar" style="width: 75%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>CI/CD</span><span>80%</span></h4>
+                    <div class="skill-bar"><div class="skill-progress tools-bar" style="width: 80%"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
