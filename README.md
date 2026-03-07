@@ -107,10 +107,22 @@ Aspiring **Data Analyst & Developer** passionate about learning and building pra
 
 # 🌍 Connect With Me
 
-![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge\&logo=linkedin)
+<p align="center">
 
-![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge\&logo=github)
+<a href="https://www.linkedin.com/in/shanib-khan-515a8a316/">
+<img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin">
+</a>
 
+<a href="https://github.com/shanib-techie">
+<img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://instagram.com/shanib99">
+<img src="https://img.shields.io/badge/Instagram-red?style=for-the-badge&logo=instagram">
+</a>
+
+</p>
 ---
 
 ⭐ If you like this project, consider giving it a **star** on GitHub!
+
